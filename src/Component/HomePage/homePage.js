@@ -1,5 +1,6 @@
 import React from "react";
 import "./homePage.css";
+import { Link } from "react-router-dom";
 
 const HomePage = ({sideNavbar}) => {
 
@@ -22,10 +23,10 @@ const HomePage = ({sideNavbar}) => {
 
       <div className={sideNavbar ? "home_mainPage" : "home_mainPageWithoutLink"}>
 
-        <div className="youtube_Video">
+        <Link to={"/watch/9897"} className="youtube_Video">
 
           <div className="youtube_thumbnailBox">
-            <img src="https://i.ytimg.com/an_webp/7KRyUKAxBIc/mqdefault_6s.webp?du=3000&sqp=CPeCucQG&rs=AOn4CLCsglaOaQA8P7O32hRNtBREBmkYjg" alt="Thumbnail" className="youtube_thumbnailPic" />
+            <img src="https://i.ytimg.com/vi/oZ72uTWla5Q/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
             <div className="youtube_timingThumbnail">
               21:12
             </div>
@@ -37,19 +38,19 @@ const HomePage = ({sideNavbar}) => {
             </div>
 
             <div className="youtubeTitleBox_Title">
-              <div className="youtube_videoTitle">Harry Potter X Game of Thrones</div>
+              <div className="youtube_videoTitle">Shankara Song || Rishabh Rikhiram Sharma</div>
               <div className="youtube_channelName">Rishabh moments</div>
               <div className="youtubeVideo_views">628 likes</div>
             </div>
           </div>
 
 
-        </div>
+        </Link>
 
-        <div className="youtube_Video">
+        <Link to={"/watch/9897"} className="youtube_Video">
 
           <div className="youtube_thumbnailBox">
-            <img src="https://i.ytimg.com/an_webp/7KRyUKAxBIc/mqdefault_6s.webp?du=3000&sqp=CPeCucQG&rs=AOn4CLCsglaOaQA8P7O32hRNtBREBmkYjg" alt="Thumbnail" className="youtube_thumbnailPic" />
+            <img src="https://i.ytimg.com/vi/oZ72uTWla5Q/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
             <div className="youtube_timingThumbnail">
               21:12
             </div>
@@ -61,19 +62,19 @@ const HomePage = ({sideNavbar}) => {
             </div>
 
             <div className="youtubeTitleBox_Title">
-              <div className="youtube_videoTitle">Harry Potter X Game of Thrones</div>
+              <div className="youtube_videoTitle">Shankara Song || Rishabh Rikhiram Sharma</div>
               <div className="youtube_channelName">Rishabh moments</div>
               <div className="youtubeVideo_views">628 likes</div>
             </div>
           </div>
 
 
-        </div>
+        </Link>
 
-        <div className="youtube_Video">
+        <Link to={"/watch/9897"} className="youtube_Video">
 
           <div className="youtube_thumbnailBox">
-            <img src="https://i.ytimg.com/an_webp/7KRyUKAxBIc/mqdefault_6s.webp?du=3000&sqp=CPeCucQG&rs=AOn4CLCsglaOaQA8P7O32hRNtBREBmkYjg" alt="Thumbnail" className="youtube_thumbnailPic" />
+            <img src="https://i.ytimg.com/vi/oZ72uTWla5Q/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
             <div className="youtube_timingThumbnail">
               21:12
             </div>
@@ -85,19 +86,19 @@ const HomePage = ({sideNavbar}) => {
             </div>
 
             <div className="youtubeTitleBox_Title">
-              <div className="youtube_videoTitle">Harry Potter X Game of Thrones</div>
+              <div className="youtube_videoTitle">Shankara Song || Rishabh Rikhiram Sharma</div>
               <div className="youtube_channelName">Rishabh moments</div>
               <div className="youtubeVideo_views">628 likes</div>
             </div>
           </div>
 
 
-        </div>
+        </Link>
 
-        <div className="youtube_Video">
+        <Link to={"/watch/9897"} className="youtube_Video">
 
           <div className="youtube_thumbnailBox">
-            <img src="https://i.ytimg.com/an_webp/7KRyUKAxBIc/mqdefault_6s.webp?du=3000&sqp=CPeCucQG&rs=AOn4CLCsglaOaQA8P7O32hRNtBREBmkYjg" alt="Thumbnail" className="youtube_thumbnailPic" />
+            <img src="https://i.ytimg.com/vi/oZ72uTWla5Q/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
             <div className="youtube_timingThumbnail">
               21:12
             </div>
@@ -109,19 +110,19 @@ const HomePage = ({sideNavbar}) => {
             </div>
 
             <div className="youtubeTitleBox_Title">
-              <div className="youtube_videoTitle">Harry Potter X Game of Thrones</div>
+              <div className="youtube_videoTitle">Shankara Song || Rishabh Rikhiram Sharma</div>
               <div className="youtube_channelName">Rishabh moments</div>
               <div className="youtubeVideo_views">628 likes</div>
             </div>
           </div>
 
 
-        </div>
+        </Link>
 
-        <div className="youtube_Video">
+        <Link to={"/watch/9897"} className="youtube_Video">
 
           <div className="youtube_thumbnailBox">
-            <img src="https://i.ytimg.com/an_webp/7KRyUKAxBIc/mqdefault_6s.webp?du=3000&sqp=CPeCucQG&rs=AOn4CLCsglaOaQA8P7O32hRNtBREBmkYjg" alt="Thumbnail" className="youtube_thumbnailPic" />
+            <img src="https://i.ytimg.com/vi/oZ72uTWla5Q/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
             <div className="youtube_timingThumbnail">
               21:12
             </div>
@@ -133,19 +134,19 @@ const HomePage = ({sideNavbar}) => {
             </div>
 
             <div className="youtubeTitleBox_Title">
-              <div className="youtube_videoTitle">Harry Potter X Game of Thrones</div>
+              <div className="youtube_videoTitle">Shankara Song || Rishabh Rikhiram Sharma</div>
               <div className="youtube_channelName">Rishabh moments</div>
               <div className="youtubeVideo_views">628 likes</div>
             </div>
           </div>
 
 
-        </div>
+        </Link>
 
-        <div className="youtube_Video">
+        <Link to={"/watch/9897"} className="youtube_Video">
 
           <div className="youtube_thumbnailBox">
-            <img src="https://i.ytimg.com/an_webp/7KRyUKAxBIc/mqdefault_6s.webp?du=3000&sqp=CPeCucQG&rs=AOn4CLCsglaOaQA8P7O32hRNtBREBmkYjg" alt="Thumbnail" className="youtube_thumbnailPic" />
+            <img src="https://i.ytimg.com/vi/oZ72uTWla5Q/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
             <div className="youtube_timingThumbnail">
               21:12
             </div>
@@ -157,14 +158,62 @@ const HomePage = ({sideNavbar}) => {
             </div>
 
             <div className="youtubeTitleBox_Title">
-              <div className="youtube_videoTitle">Harry Potter X Game of Thrones</div>
+              <div className="youtube_videoTitle">Shankara Song || Rishabh Rikhiram Sharma</div>
               <div className="youtube_channelName">Rishabh moments</div>
               <div className="youtubeVideo_views">628 likes</div>
             </div>
           </div>
 
 
-        </div>
+        </Link>
+
+        <Link to={"/watch/9897"} className="youtube_Video">
+
+          <div className="youtube_thumbnailBox">
+            <img src="https://i.ytimg.com/vi/oZ72uTWla5Q/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
+            <div className="youtube_timingThumbnail">
+              21:12
+            </div>
+          </div>
+
+          <div className="youtubeTitleBox">
+            <div className="youtubeTitleBoxProfile">
+              <img src="https://yt3.googleusercontent.com/sIL3L5eee4sqgSMJgbx1daJkuwrm-cZ0qrJbjGgYbJJSk4VEpSh0w-kFqJl5-r3gikSBkOiY=s160-c-k-c0x00ffffff-no-rj" alt="profile" className="youtube_thumbnail_Profile" />
+            </div>
+
+            <div className="youtubeTitleBox_Title">
+              <div className="youtube_videoTitle">Shankara Song || Rishabh Rikhiram Sharma</div>
+              <div className="youtube_channelName">Rishabh moments</div>
+              <div className="youtubeVideo_views">628 likes</div>
+            </div>
+          </div>
+
+
+        </Link>
+
+        <Link to={"/watch/9897"} className="youtube_Video">
+
+          <div className="youtube_thumbnailBox">
+            <img src="https://i.ytimg.com/vi/oZ72uTWla5Q/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
+            <div className="youtube_timingThumbnail">
+              21:12
+            </div>
+          </div>
+
+          <div className="youtubeTitleBox">
+            <div className="youtubeTitleBoxProfile">
+              <img src="https://yt3.googleusercontent.com/sIL3L5eee4sqgSMJgbx1daJkuwrm-cZ0qrJbjGgYbJJSk4VEpSh0w-kFqJl5-r3gikSBkOiY=s160-c-k-c0x00ffffff-no-rj" alt="profile" className="youtube_thumbnail_Profile" />
+            </div>
+
+            <div className="youtubeTitleBox_Title">
+              <div className="youtube_videoTitle">Shankara Song || Rishabh Rikhiram Sharma</div>
+              <div className="youtube_channelName">Rishabh moments</div>
+              <div className="youtubeVideo_views">628 likes</div>
+            </div>
+          </div>
+
+
+        </Link>
 
       </div>
 

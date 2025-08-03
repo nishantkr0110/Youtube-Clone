@@ -7,10 +7,14 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import PersonIcon from '@mui/icons-material/Person';
+import { Link, useNavigate } from "react-router-dom";
+import Login from "../Login/login";
 
 const Navbar = ({setSideNavbarFunc, sideNavbar}) => {
   const [userPic, setUserPic] = useState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIs3peZbmHi0e-uTv4_RB4RWFfqEzE7BNNSg&s")
   const [navbarModal, setNavbarModal] = useState(false);
+  const [login,setLogin] = useState(false);
+  const navigate = useNavigate();
 
   const handleClickModal = () => {
     setNavbarModal(prev => !prev);
@@ -18,6 +22,25 @@ const Navbar = ({setSideNavbarFunc, sideNavbar}) => {
 
   const sideNavbarFunc = () => {
     setSideNavbarFunc(!sideNavbar)
+  }
+
+  const handleProfile = () => {
+    navigate("/user/7697");
+    setNavbarModal(false);
+  }
+
+  const setLoginModal = () => {
+    setLogin(false);
+  }
+
+  const onclickOfPopUpOption = (button) => {
+    setNavbarModal(false);
+    
+    if(button==="login") {
+      setLogin(true);
+    }else{
+
+    }
   }
 
 
@@ -28,10 +51,11 @@ const Navbar = ({setSideNavbarFunc, sideNavbar}) => {
         <div className="navbarHamberger" onClick={sideNavbarFunc}>
           <MenuIcon sx={{color:"white"}} />
         </div>
-        <div className="navbar_youtubeImg">
+
+        <Link to={"/"} className="navbar_youtubeImg">
           <YouTubeIcon sx={{fontSize:"34px"}} className="navbar_youtubeImage"/>
           <div className="navbar_utubeTitle">YouTube</div>
-        </div>
+        </Link>
       </div>
 
       <div className="navbar-middle">
@@ -48,18 +72,27 @@ const Navbar = ({setSideNavbarFunc, sideNavbar}) => {
       </div>
 
       <div className="navbar-right">
-        <VideoCallIcon sx={{fontSize:"30px", cursor:"pointer", color:"white" }} />
+
+        <Link to={"/763/upload"}>
+          <VideoCallIcon sx={{fontSize:"30px", cursor:"pointer", color:"white" }} />
+        </Link>
+        
         <NotificationsIcon sx={{fontSize:"30px", cursor:"pointer", color:"white" }}/>
         <img onClick={handleClickModal} src={userPic} className="navbar-right-logo" alt="logo" />
         
         { navbarModal &&
           <div className="navbar-modal">
-            <div className="navbar-modal-option">Profile</div>
-            <div className="navbar-modal-option">Logout</div>
-            <div className="navbar-modal-option">Login</div>
+            <div className="navbar-modal-option" onClick={handleProfile}>Profile</div>
+            <div className="navbar-modal-option" onClick={()=>onclickOfPopUpOption("logout")}>Logout</div>
+            <div className="navbar-modal-option" onClick={()=>onclickOfPopUpOption("login")}>Login</div>
           </div>
         }
+
       </div>
+
+      {
+        login && <Login setLoginModal={setLoginModal}/>
+      }
 
     </div>
   )
