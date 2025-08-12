@@ -26,6 +26,25 @@ exports.getAllVideo = async(req, res) => {
   }
 }
 
+exports.searchVideos = async (req, res) => {
+  try {
+    const title = req.query.title || "";
+    if (!title.trim()) {
+      return res.status(200).json({ success: true, videos: [] });
+    }
+
+    const videos = await Video.find({
+      title: { $regex: title, $options: "i" }
+    }).populate('user', 'channelName profilePic userName createdAt');
+
+    res.status(200).json({ success: true, videos });
+  } catch (error) {
+    console.error("searchVideos error:", error);
+    res.status(500).json({ error: 'Server error' });
+  }
+};
+
+
 exports.getVideoById = async(req, res) => {
   try {
     let {id} = req.params;

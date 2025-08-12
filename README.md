@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# YouTube Clone - Backend 🎬
 
-## Available Scripts
+This is the backend API for my YouTube Clone project.  
+It’s built with **Node.js**, **Express**, and **MongoDB** to handle user authentication, video uploads, and fetching video data.  
+This API works together with the frontend to create a full-stack YouTube-like experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Purpose
+The backend is responsible for:
+- User authentication (signup/login)
+- Storing video metadata in MongoDB
+- Providing video lists and details to the frontend
+- Handling video upload routes
+- Managing user profiles
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
+- **Node.js** (server)
+- **Express.js** (routing)
+- **MongoDB + Mongoose** (database)
+- **Multer** (for handling video uploads)
+- **JWT** (authentication)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Setup & Installation
+1. Clone this repository:
 
-### `npm run build`
+   git clone <https://github.com/nishantkr0110/Youtube-Clone.git>
+   cd youtube-backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the server:
+   npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. The API will be running on:
+   http://localhost:5000
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📌 Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+POST /api/auth/signup → Create a new account
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+POST /api/auth/login → Login and get a token
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+GET /api/videos → Get all videos
 
-## Learn More
+POST /api/videos → Upload a video (requires authentication)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+GET /api/videos/:id → Get single video details
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I had originally developed the frontend and backend in separate GitHub repositories with full commit history. However, I was unable to merge them into a single repository using Git submodules as intended. Therefore, I restructured and combined the project in a cleaner way, which is now reflected in this repository.

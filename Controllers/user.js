@@ -36,12 +36,12 @@ exports.signIn = async (req, res) => {
 
       res.cookie('token',token,cookieOptions);
       
-      res.json({message: 'Logged in Successfully', success: "true",token});
+      res.json({message: 'Logged in Successfully', success: "true",token,user});
 
     }else {
       res.status(400).json({error:'Invalid Credentials'});
     }
-  }catch (error) {
+  }catch (errorMsg) {
     res.status(500).json({error: 'Server error'});
   }
 }

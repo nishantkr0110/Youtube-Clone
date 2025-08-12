@@ -3,7 +3,7 @@ const router = express.Router();
 const videoController = require('../Controllers/video');
 const auth = require('../middleware/authentication');
 
-
+router.get('/search', videoController.searchVideos);
 router.post('/video',auth,videoController.uploadVideo);
 router.get('/allVideo',videoController.getAllVideo);
 router.get('/getVideoById/:id',videoController.getVideoById);
